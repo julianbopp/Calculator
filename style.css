@@ -1,0 +1,29 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 300px;
+    padding: 60px;
+    gap: 5px;
+    
+    border-style: solid;
+}
+
+.digit, .operator{
+    height: 60px;
+    flex: 1 0 70px;
+    margin: 0;
+}
+
+
+#clear, #delete {
+    height: 60px;
+    flex: 1 0 140px;
+}
+
+.display{
+    height: 20px;
+    flex: 0 0 100%;
+    border-style: solid;
+}
