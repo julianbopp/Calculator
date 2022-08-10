@@ -26,5 +26,13 @@ function show(number) {
 function getDisplayValue() {
     const display = document.querySelector(".display");
     return Number(display.textContent);
-
 }
+
+
+
+let digits = document.querySelectorAll(".digit");
+console.log(digits);
+
+digits.forEach(digit => digit.addEventListener("click", function() {
+    show(digit.textContent);
+}));
