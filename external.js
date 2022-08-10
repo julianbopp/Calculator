@@ -17,3 +17,8 @@ function divide (a, b) {
 function operate(op, a, b) {
     return op(a,b);
 }
+
+function show(number) {
+    const display = document.querySelector(".display");
+    display.textContent = display.textContent + number;
+}
