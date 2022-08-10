@@ -22,3 +22,9 @@ function show(number) {
     const display = document.querySelector(".display");
     display.textContent = display.textContent + number;
 }
+
+function getDisplayValue() {
+    const display = document.querySelector(".display");
+    return Number(display.textContent);
+
+}
