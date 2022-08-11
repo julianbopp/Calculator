@@ -10,7 +10,7 @@
     border-style: solid;
 }
 
-.digit, .operator{
+.digit, .operator, #equals{
     height: 60px;
     flex: 1 0 70px;
     margin: 0;
