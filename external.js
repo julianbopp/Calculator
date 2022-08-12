@@ -36,6 +36,23 @@ function clearAll() {
     display.textContent = "";
 }
 
+function deleteOne() {
+    if (b !== "") {
+        b = b.slice(0, -1);
+        display.textContent = display.textContent.slice(0,-1);
+    }
+    else if (op !== null) {
+        op = null;
+    }
+    else if (a !== "") {
+        a = a.slice(0, -1);
+    } else {
+        return;
+    }
+    display.textContent = display.textContent.slice(0,-1);
+
+}
+
 
 const display = document.querySelector(".display");
 var a = "";
@@ -91,4 +108,7 @@ equal.addEventListener("click", function () {
 
 const clear = document.querySelector("#clear");
 clear.addEventListener("click", clearAll);
+
+const deleteLast = document.querySelector("#delete");
+deleteLast.addEventListener("click", deleteOne);
 
