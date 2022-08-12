@@ -64,7 +64,6 @@ operators.forEach(operator => operator.addEventListener("click", function () {
     if (!op) {
         show(operator.textContent);
         if (operator.id === "add") {
-            console.log("test");
             op = add;
         }
         if (operator.id === "subtract") {
